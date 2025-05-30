@@ -13,7 +13,7 @@ export const FloorSelect = ({ handleFloorChange, selectedFloor }) => {
     <div className='absolute top-4 right-4 inline-block w-36 z-10'>
       <button
         onClick={toggleOpen}
-        className='w-full p-2 pr-10 border border-gray-300 rounded-lg bg-white text-black relative flex justify-between items-center cursor-pointer focus:outline-none'
+        className='w-full p-2 pr-10 border border-gray-300 rounded-lg bg-white text-black relative flex justify-between items-center cursor-pointer focus:outline-none shadow-md'
       >
         {selectedFloor.label}
         <motion.span
@@ -28,7 +28,7 @@ export const FloorSelect = ({ handleFloorChange, selectedFloor }) => {
       <AnimatePresence>
         {isOpen && (
           <motion.ul
-            className='absolute top-full left-0 mt-2 w-full z-10 flex flex-col bg-white border-gray-300 border rounded-lg overflow-hidden'
+            className='absolute top-full left-0 mt-2 w-full z-10 flex flex-col bg-white border-gray-300 border rounded-lg overflow-hidden shadow-md'
             variants={menuSelectVariants}
             initial='hidden'
             animate='visible'

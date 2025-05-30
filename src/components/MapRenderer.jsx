@@ -8,6 +8,7 @@ import { StoreDetailsModal } from './ui/StoreDetailsModal';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 import { SvgUpperFloor } from './SvgUpperFloor';
 import { options } from '@/constants';
+import { SvgGroundFloor } from './SvgGroundFloor';
 
 export const MapRenderer = () => {
   const svgRef = useRef(null);
@@ -91,6 +92,13 @@ export const MapRenderer = () => {
                 <TransformComponent wrapperClass='min-h-[540px] w-full bg-white'>
                   {selectedFloor.value === 'upperFloor' && (
                     <SvgUpperFloor
+                      svgRef={svgRef}
+                      selectedStore={selectedStore}
+                      svgId={store.svgId}
+                    />
+                  )}
+                  {selectedFloor.value === 'groundFloor' && (
+                    <SvgGroundFloor
                       svgRef={svgRef}
                       selectedStore={selectedStore}
                       svgId={store.svgId}

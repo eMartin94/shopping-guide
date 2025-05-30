@@ -1,3 +1,4 @@
+import { svgClasses } from '@/constants';
 import { svgTextStyle } from '@/styles/variants';
 import React from 'react';
 
@@ -6,8 +7,6 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
     const targetId = e.target.id;
     selectedStore(targetId);
   };
-
-  console.log();
 
   return (
     <svg
@@ -121,13 +120,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='357.06'
                 width='27.3'
                 height='69.77'
-                className={`stroke-gray-500
-                ${
-                  svgId === 'LPA01'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700
-              `}
+                className={svgClasses(svgId, 'LPA01')}
                 onClick={handleTargetId}
               />
               <text transform='translate(211.36 386.04)' style={svgTextStyle}>
@@ -150,11 +143,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='386.04'
                 width='56.45'
                 height='40.79'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA02'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA02')}
                 onClick={handleTargetId}
               />
               <text transform='translate(251.64 401.04)' style={svgTextStyle}>
@@ -177,11 +166,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='357.06'
                 width='56.7'
                 height='28.98'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA03'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA03')}
                 onClick={handleTargetId}
               />
               <text transform='translate(253.49 367.46)' style={svgTextStyle}>
@@ -204,11 +189,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='326.17'
                 width='84'
                 height='30.89'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA04'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA04')}
                 onClick={handleTargetId}
               />
               <text transform='translate(236.37 338.52)' style={svgTextStyle}>
@@ -231,11 +212,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='282.51'
                 width='84'
                 height='43.66'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA05'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA05')}
                 onClick={handleTargetId}
               />
               <text transform='translate(218.79 303.6)' style={svgTextStyle}>
@@ -258,11 +235,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='282.51'
                 width='45.34'
                 height='21.83'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA06'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA06')}
                 onClick={handleTargetId}
               />
               <text transform='translate(259.91 289.54)' style={svgTextStyle}>
@@ -285,11 +258,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='240.87'
                 width='84'
                 height='41.64'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA07'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA07')}
                 onClick={handleTargetId}
               />
               <text transform='translate(236.37 256.93)' style={svgTextStyle}>
@@ -312,11 +281,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='112.02'
                 width='253.13'
                 height='128.85'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA08'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA08')}
                 onClick={handleTargetId}
               />
               <text transform='translate(316.74 164.89)' style={svgTextStyle}>
@@ -336,11 +301,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA09'
                 points='375.52 240.87 440.92 240.87 440.92 274.27 403.39 274.27 403.39 266.49 375.52 266.49 375.52 240.87'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA09'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA09')}
                 onClick={handleTargetId}
               />
               <text transform='translate(407.95 252.29)' style={svgTextStyle}>
@@ -363,11 +324,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='266.49'
                 width='27.87'
                 height='17.52'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA09B'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA09B')}
                 onClick={handleTargetId}
               />
               <text transform='translate(382.29 271.95)' style={svgTextStyle}>
@@ -387,11 +344,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA10'
                 points='375.52 284.01 403.39 284.01 403.39 274.27 414.37 274.27 414.37 302.81 375.52 302.81 375.52 284.01'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA10'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA10')}
                 onClick={handleTargetId}
               />
               <text transform='translate(394.44 290.66)' style={svgTextStyle}>
@@ -414,11 +367,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='302.81'
                 width='38.85'
                 height='28.4'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA11'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA11')}
                 onClick={handleTargetId}
               />
               <text transform='translate(388.05 314.51)' style={svgTextStyle}>
@@ -441,11 +390,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='274.27'
                 width='21.13'
                 height='56.94'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA12'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA12')}
                 onClick={handleTargetId}
               />
               <text transform='translate(416.34 299.34)' style={svgTextStyle}>
@@ -468,11 +413,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='274.27'
                 width='22.96'
                 height='56.94'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA13'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA13')}
                 onClick={handleTargetId}
               />
               <text transform='translate(438.38 299.46)' style={svgTextStyle}>
@@ -495,11 +436,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='274.27'
                 width='23.83'
                 height='56.94'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA14'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA14')}
                 onClick={handleTargetId}
               />
               <text transform='translate(461.76 299.34)' style={svgTextStyle}>
@@ -519,11 +456,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA14B'
                 points='440.92 240.87 459.43 240.87 459.43 247.25 482.28 247.25 482.28 274.27 440.92 274.27 440.92 240.87'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA14B'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA14B')}
                 onClick={handleTargetId}
               />
               <text transform='translate(452.8 256.57)' style={svgTextStyle}>
@@ -543,11 +476,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA15'
                 points='482.28 283.34 504.11 283.34 532.58 310.85 512.92 331.21 482.28 331.21 482.28 283.34'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA15'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA15')}
                 onClick={handleTargetId}
               />
               <text transform='translate(492.16 307.55)' style={svgTextStyle}>
@@ -567,11 +496,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA16'
                 points='482.28 247.25 518.41 247.25 544.64 245.55 544.64 283.34 552.17 290.42 532.58 310.85 504.11 283.34 482.28 283.34 482.28 247.25'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA16'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA16')}
                 onClick={handleTargetId}
               />
               <text transform='translate(505.42 265.85)' style={svgTextStyle}>
@@ -591,11 +516,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA17'
                 points='552.17 290.42 586 290.42 586 241.27 544.64 245.55 544.64 283.34 552.17 290.42'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA17'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA17')}
                 onClick={handleTargetId}
               />
               <text transform='translate(556.44 264.29)' style={svgTextStyle}>
@@ -615,11 +536,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA18'
                 points='586 290.42 612.11 290.42 619.6 297.72 630.92 285.72 630.92 236.02 586 240.87 586 290.42'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA18'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA18')}
                 onClick={handleTargetId}
               />
               <text transform='translate(599.87 261.21)' style={svgTextStyle}>
@@ -639,11 +556,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <path
                 id='LPA19'
                 d='m630.92,236.02l109.62-11.4-.64,37.91s-28.13,52.38-89.87,65.23l-30.43-30.04,11.32-12v-49.7Z'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA19'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA19')}
                 onClick={handleTargetId}
               />
               <text transform='translate(664.66 271.21)' style={svgTextStyle}>
@@ -666,11 +579,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='21.26'
                 height='48.26'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA20'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA20')}
                 onClick={handleTargetId}
               />
               <text transform='translate(526.77 386.04)' style={svgTextStyle}>
@@ -693,11 +602,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='21.45'
                 height='48.26'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA21'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA21')}
                 onClick={handleTargetId}
               />
               <text transform='translate(505.42 386.04)' style={svgTextStyle}>
@@ -720,11 +625,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='21.64'
                 height='48.26'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA22'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA22')}
                 onClick={handleTargetId}
               />
               <text transform='translate(484.35 382.51)' style={svgTextStyle}>
@@ -747,11 +648,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='22.34'
                 height='30.7'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA23A'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA23A')}
                 onClick={handleTargetId}
               />
               <text transform='translate(463.31 375.53)' style={svgTextStyle}>
@@ -774,11 +671,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='27.83'
                 height='74.04'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA23B'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA23B')}
                 onClick={handleTargetId}
               />
               <text transform='translate(436.4 394.72)' style={svgTextStyle}>
@@ -798,11 +691,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA23C'
                 points='545.98 412.27 545.98 438.06 459.3 438.06 459.3 394.72 481.64 394.72 481.64 412.27 545.98 412.27'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA23C'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA23C')}
                 onClick={handleTargetId}
               />
               <text transform='translate(492.62 421.68)' style={svgTextStyle}>
@@ -825,11 +714,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='29.87'
                 height='29.36'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA24'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA24')}
                 onClick={handleTargetId}
               />
               <text transform='translate(408.08 375.53)' style={svgTextStyle}>
@@ -852,11 +737,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
                 y='364.02'
                 width='27.57'
                 height='29.36'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA25'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA25')}
                 onClick={handleTargetId}
               />
               <text transform='translate(379.79 375.53)' style={svgTextStyle}>
@@ -876,11 +757,7 @@ export const SvgUpperFloor = ({ svgRef, selectedStore, svgId }) => {
               <polygon
                 id='LPA26'
                 points='374.03 393.38 431.47 393.38 431.47 438.06 397.13 438.06 397.13 425.36 374.03 425.36 374.03 393.38'
-                className={`stroke-gray-500 ${
-                  svgId == 'LPA26'
-                    ? 'fill-blue-400'
-                    : 'fill-white hover:fill-blue-300'
-                } transition-all duration-700`}
+                className={svgClasses(svgId, 'LPA26')}
                 onClick={handleTargetId}
               />
               <text transform='translate(396.69 406.43)' style={svgTextStyle}>

@@ -23,7 +23,7 @@ export const StoreDetailsModal = ({
           initial='hidden'
           animate='visible'
           exit='exit'
-          className='w-full h-auto max-w-[300px] min-h-[250px] absolute top-4 left-4 bg-white rounded-lg z-10 shadow-md'
+          className='w-full h-auto max-w-[260px] sm:max-w-[300px] min-h-[250px] absolute top-4 left-4 bg-white rounded-lg z-10 shadow-md border border-gray-300 overflow-hidden'
         >
           <div className='flex flex-col gap-2 text-black p-4 relative'>
             <IconX
