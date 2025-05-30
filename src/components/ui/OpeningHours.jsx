@@ -1,5 +1,6 @@
 import { openingHoursVariants } from '@/styles/variants';
 import { AnimatePresence, motion } from 'framer-motion';
+import { dayTranslations } from '@/constants';
 
 import React from 'react';
 
@@ -17,9 +18,11 @@ export const OpeningHours = ({ show, openingHours }) => {
         >
           {openingHours.map(({ day, open, close }) => (
             <div className='flex justify-between' key={day}>
-              <p className='font-extralight text-sm'>{day}</p>
-              <span className='font-extralight text-sm'>
-                {open} - {close}
+              <span className='text-sm font-extralight text-gray-700'>
+                {dayTranslations[day] || day}
+              </span>
+              <span className='text-sm font-extralight text-gray-500'>
+                {open && close ? `${open} - ${close}` : 'Cerrado'}
               </span>
             </div>
           ))}

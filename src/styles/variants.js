@@ -58,3 +58,9 @@ export const modalVariants = {
     },
   },
 };
+
+export const svgTextStyle = {
+  fontFamily: 'FuturaStd-Heavy, Futura Std',
+  fontWeight: 800,
+  pointerEvents: 'none',
+};

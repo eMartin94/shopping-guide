@@ -162,7 +162,7 @@ export const storeData = {
       },
       {
         id: 9,
-        svgId: 'LPA09A',
+        svgId: 'LPA09',
         name: 'Come & Clean',
         description: 'Servicio de tintorería y lavandería profesional.',
         capacity: 4,
@@ -519,7 +519,7 @@ export const storeData = {
       },
       {
         id: 27,
-        svgId: 'LPA23CEX',
+        svgId: 'LPA23C',
         name: 'Chihuahua Tacos y Tragos',
         description: 'Restaurante que ofrece una variedad de tacos y bebidas.',
         capacity: 12,
