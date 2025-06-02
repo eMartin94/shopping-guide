@@ -9,6 +9,7 @@ import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 import { SvgUpperFloor } from './SvgUpperFloor';
 import { options } from '@/constants';
 import { SvgGroundFloor } from './SvgGroundFloor';
+import Link from 'next/link';
 
 export const MapRenderer = () => {
   const svgRef = useRef(null);
@@ -109,6 +110,18 @@ export const MapRenderer = () => {
             );
           }}
         </TransformWrapper>
+      </div>
+      <div className='flex items-end justify-end gap-2 w-full max-w-[900px]'>
+        <span className='text-xs font-extralight'>
+          Encuentra el plano original en
+        </span>
+        <Link
+          href='https://ccelencinar.es/planos/'
+          target='_blank'
+          className='text-xs font-extralight text-blue-500'
+        >
+          https://ccelencinar.es/planos/
+        </Link>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export const Header = () => {
           <span className='hidden sm:block mt-3 text-xl'>Shopping Guide</span>
         </Link>
         <Link
-          href={''}
+          href={'/contact'}
           className='flex items-center gap-2 border-2 border-white py-2 px-4 rounded-4xl cursor-pointer hover:bg-white hover:text-black transition-all duration-500 group'
         >
           contáctame
