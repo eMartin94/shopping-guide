@@ -19,18 +19,18 @@ export const Contact = () => {
           <input
             type='text'
             placeholder='Nombre'
-            className='w-full sm:w-1/2 border border-gray-300 bg-white px-4 py-2 placeholder:text-gray-500 rounded-lg focus:outline-none'
+            className='w-full sm:w-1/2 text-black border border-gray-300 bg-white px-4 py-2 placeholder:text-gray-500 rounded-lg focus:outline-none'
           />
           <input
             type='email'
             placeholder='Correo electrónico'
-            className='w-full sm:w-1/2 border border-gray-300 bg-white px-4 py-2 placeholder:text-gray-500 rounded-lg focus:outline-none'
+            className='w-full sm:w-1/2 text-black border border-gray-300 bg-white px-4 py-2 placeholder:text-gray-500 rounded-lg focus:outline-none'
           />
         </div>
 
         <textarea
           placeholder='Mensaje'
-          className='w-full border border-gray-300 bg-white px-4 py-2 placeholder:text-gray-500 rounded-lg resize-none focus:outline-none'
+          className='w-full border text-black border-gray-300 bg-white px-4 py-2 placeholder:text-gray-500 rounded-lg resize-none focus:outline-none'
           rows={4}
         ></textarea>
 
@@ -74,7 +74,7 @@ export const Contact = () => {
       <div className='flex items-center justify-center w-full mt-8'>
         <Link
           href={'/'}
-          className='text-sm hover:text-gray-500 font-extralight'
+          className='text-sm text-gray-500 hover:text-white font-extralight'
         >
           Volver al inicio
         </Link>
